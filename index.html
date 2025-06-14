@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Who Looks Better?</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div>
+    <h1>Who looks Better?</h1>
+    <div class="images">
+      <button onclick="playSound('henry')"><img src="henry.jpg" /></button>
+      <button onclick="playSound('bts')"><img src="bts.jpg" /></button>
+    </div>
+  </div>
+
+ 
+  <div id="popup" class="popup"><span id="popupText"></span></div>
+
+  
+  <audio id="henrySound" src="henry.mp3"></audio>
+  <audio id="btsSound" src="bts.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

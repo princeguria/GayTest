@@ -1,0 +1,51 @@
+body {
+  text-align: center;
+  margin: 0;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+button {
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+button img {
+  width: 150px;
+  height: 175px;
+  object-fit: cover;
+}
+
+/* Popup styles */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 60px;
+  background: #222;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 10px;
+  display: none;
+  opacity: 0;
+  z-index: 9999;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
